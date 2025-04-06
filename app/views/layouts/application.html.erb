@@ -28,17 +28,21 @@
     <hr>
 
     <% if notice.present? %>
-      <div style="color: green">
+      <nav>
+      <div class="alert alert-success" role="alert">
         <%= notice %>
       </div>
+      </nav>
     <% end %>
 
     <% if alert.present? %>
-      <div style="color: red">
+      <nav>
+      <div class="alert alert-danger" role="alert">
         <%= alert %>
       </div>
+      </nav>
     <% end %>
-
+ 
     <%= yield %>
   </body>
 </html>
